@@ -1,113 +1,114 @@
+import Head from "next/head";
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import {
+  AiFillTwitterCircle,
+  AiFillLinkedin,
+  AiFillYoutube,
+} from "react-icons/ai";
 import Image from "next/image";
-
+import deved from "../public/dev-ed-wave.png";
+import design from "../public/design.png";
+import code from "../public/code.png";
+import consulting from "../public/consulting.png";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+    <div>
+      <Head>
+        <title>Jays Portfolio</title>
+        <meta name="description" content="Made by AlchemicalCoder" />
+        <link rel="stylesheet" href="/favicon.ico" />
+      </Head>
+      <main className="bg-white px-10">
+        <section className="min-h-screen">
+          <nav className="py-10 mb-12 flex justify-between">
+            <h1 className="text-xl font-burtons">Hello everybody</h1>
+            <ul className="flex items-center">
+              <li>
+                <BsFillMoonStarsFill className="cursor-pointer 2xl" />
+              </li>
+              <li>
+                <a
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 roudned-md ml-8"
+                  href="#"
+                >
+                  Resume
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div className="text-center p-10 py-10">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium">
+              Jamie Vaughan
+            </h2>
+            <h3 className="text-2xl py-2">Website developer/designer</h3>
+            <p className="text-md py-5 leading-8 text-grey-800">
+              Looking to establish or enhance your online presence? Look no
+              further! I specialize in providing top-notch website development
+              services tailored to your unique needs. Whether your a small
+              business owner, an entrepreneur, or an organization aiming to
+              reach a wider audience, I can craft visually appealing,
+              user-friendly websites that reflect your brand identity and drive
+              results. From custom designs to responsive layouts, Ill ensure
+              your website stands out in the digital landscape. Lets collaborate
+              to bring your vision to life and propel your online growth
+              forward!
+            </p>
+          </div>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-grey-600">
+            <AiFillTwitterCircle />
+            <AiFillLinkedin />
+            <AiFillYoutube />
+          </div>
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              src={deved}
+              layout="fixed"
+              objectFit="center"
+              alt="an image of a man"
             />
-          </a>
-        </div>
-      </div>
+          </div>
+        </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">Experience and field of expertise</h3>
+            <p className="text-md py-2 leading-8 text-grey-800">
+              I have been working as a web developer for over 10 years. I have
+              worked with a wide variety of languages and frameworks, including
+              <span className="text-emerald-500">
+                HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB,
+                Mongoose, Express.js, Bootstrap,
+              </span>{" "}
+              and more.
+            </p>
+            <p className="text-md py-5 leading-8 text-grey-800">
+              I've undertaken various freelance website development projects,
+              each presenting its own set of challenges and opportunities for
+              growth. From crafting sleek landing pages for startups to building
+              comprehensive e-commerce platforms for established businesses, my
+              experience spans across diverse industries and requirements. I've
+              collaborated with clients to create dynamic websites that not only
+              showcase their products or services but also engage and convert
+              visitors effectively. My portfolio encompasses a range of
+              projects, demonstrating my proficiency in frontend and backend
+              development, as well as my ability to adapt to evolving
+              technological trends.
+            </p>
+          </div>
+          <div>
+            <div>
+              <Image
+                src={design}
+                width={100}
+                height={100}
+                alt="a picture of some 3d design"
+              />
+              <h3>Designs</h3>
+              <p>creating designs for your needs</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   );
 }
