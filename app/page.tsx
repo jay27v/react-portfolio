@@ -86,20 +86,21 @@ export default function Home() {
             <p className="text-2xl py-2 leading-8 text-grey-800">
               I have been working as a web developer for a few years. I have
               worked with a wide variety of languages and frameworks, including:
-              <ul className="py-2">
-                <span className="text-emerald-500">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>Node.js</li>
-                  <li>Express.js</li>
-                  <li>MongoDB</li>
-                  <li>MySQL</li>
-                  <li>PostgreSQL and more!</li>
-                </span>{" "}
-              </ul>
             </p>
+            <ul className="py-2">
+              <span className="text-emerald-500">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+                <li>MySQL</li>
+                <li>PostgreSQL and more!</li>
+              </span>{" "}
+            </ul>
+
             <p className="text-2xl py-1 leading-8 text-grey-800">
               I've undertaken various freelance website development projects,
               each presenting its own set of challenges and opportunities for
